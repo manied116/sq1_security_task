@@ -210,7 +210,6 @@ const Employee = () => {
               <DataGrid 
                 rows                       = {empTblData} 
                 columns                    = {empColumns} 
-                checkboxSelection
                 pageSizeOptions            = {[5, 10, 25]}
                 rowCount                   = {empTblData.length}
                 paginationMode             = "client"
@@ -218,6 +217,7 @@ const Employee = () => {
                 onPaginationModelChange    = {setPaginationModel}
                 disableRowSelectionOnClick = {true}
                 onRowClick                 = {(params, event) => getFormData({mode:2,data:params})}
+                checkboxSelection
                 onRowSelectionModelChange  = {(record)=>getDeleteId(record)}
               />
             </Grid>
