@@ -1,0 +1,67 @@
+/* @fontface {
+    font-family: 'Poppins';
+    src: url('./font/Poppins-Light.ttf');
+} */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.wrapper{
+    padding: 16px;
+}
+.wrapper>.MuiGrid2-direction-xs-row>.MuiGrid2-container{
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    min-height: 550px;
+    border-radius: 6px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper>.MuiGrid2-direction-xs-row>.MuiGrid2-container>.MuiGrid2-direction-xs-row>.MuiStack-root{
+    align-items: center;
+}
+.wrapper>.MuiGrid2-direction-xs-row>.MuiGrid2-container>.MuiGrid2-direction-xs-row>.MuiStack-root>h3{
+    margin: 0;
+}
+.wrapper>.MuiGrid2-direction-xs-row>.MuiGrid2-container>.MuiGrid2-direction-xs-row>.MuiStack-root>.actions{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.wrapper>.MuiGrid2-direction-xs-row>.MuiGrid2-container.form_holder{
+    padding: 0px;
+}
+.wrapper>.MuiGrid2-direction-xs-row>.MuiGrid2-container.form_holder>.form_head{
+    padding: 16px;
+    border-bottom: 1px dashed #d3d3d3;
+}
+.employee_action>.MuiDialog-container>.MuiPaper-root>.MuiDialogContent-root{
+    padding: 0;
+}
+.employee_action>.MuiDialog-container>.MuiPaper-root>.MuiDialogContent-root>.MuiGrid2-container>.MuiGrid2-direction-xs-row>.MuiGrid2-container>.MuiGrid2-direction-xs-row>.MuiFormControl-root>.MuiOutlinedInput-root>input{
+    padding: 12px;
+}
+.employee_action>.MuiDialog-container>.MuiPaper-root>.MuiDialogContent-root>.MuiGrid2-container>.MuiGrid2-direction-xs-row>.MuiGrid2-container>.MuiGrid2-direction-xs-row>.MuiFormControl-root>.MuiFormLabel-root{
+    transform: translate(14px, 12px) scale(1);
+}
+.employee_action>.MuiDialog-container>.MuiPaper-root>.MuiDialogContent-root>.MuiGrid2-container>.MuiGrid2-direction-xs-row>.MuiGrid2-container>.MuiGrid2-direction-xs-row>.MuiFormControl-root>.MuiFormLabel-root.MuiInputLabel-shrink{
+    transform: translate(14px, -9px) scale(0.75);
+}
+.employee_action>.MuiDialog-container>.MuiPaper-root>.MuiDialogContent-root>.MuiGrid2-container>.MuiGrid2-direction-xs-row>.MuiGrid2-container>.MuiGrid2-direction-xs-row>.MuiFormControl-root>.MuiOutlinedInput-root>.MuiSelect-select{
+    padding: 12px;
+}
+.employee_action>.MuiDialog-container>.MuiPaper-root>.MuiDialogActions-root>.MuiStack-root>.submit_btn:hover,
+.employee_action>.MuiDialog-container>.MuiPaper-root>.MuiDialogActions-root>.MuiStack-root>.submit_btn:focus{
+    background-color: #2e7d32;
+    color: #FFFFFF;
+}
+.employee_action>.MuiDialog-container>.MuiPaper-root>.MuiDialogActions-root>.MuiStack-root>.cancel_btn:hover,
+.employee_action>.MuiDialog-container>.MuiPaper-root>.MuiDialogActions-root>.MuiStack-root>.cancel_btn:focus{
+    background-color: #d32f2f;
+    color: #FFFFFF;
+}
