@@ -208,17 +208,18 @@ const Employee = () => {
             </Grid>
             <Grid size={{ xs: 12, md: 12 }}>
               <DataGrid 
-                rows                       = {empTblData} 
-                columns                    = {empColumns} 
-                pageSizeOptions            = {[5, 10, 25]}
-                rowCount                   = {empTblData.length}
-                paginationMode             = "client"
-                paginationModel            = {paginationModel}
-                onPaginationModelChange    = {setPaginationModel}
-                disableRowSelectionOnClick = {true}
-                onRowClick                 = {(params, event) => getFormData({mode:2,data:params})}
+                rows                        = {empTblData} 
+                columns                     = {empColumns} 
+                pageSizeOptions             = {[5, 10, 25]}
+                rowCount                    = {empTblData.length}
+                paginationMode              = "client"
+                paginationModel             = {paginationModel}
+                onPaginationModelChange     = {setPaginationModel}
+                disableRowSelectionOnClick  = {true}
+                onRowClick                  = {(params, event) => getFormData({mode:2,data:params})}
                 checkboxSelection
-                onRowSelectionModelChange  = {(record)=>getDeleteId(record)}
+                onRowSelectionModelChange   = {(record)=>getDeleteId(record)}
+                disableMultipleRowSelection = {true}
               />
             </Grid>
           </Grid>
